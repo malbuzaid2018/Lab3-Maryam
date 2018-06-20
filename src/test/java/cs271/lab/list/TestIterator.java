@@ -51,7 +51,6 @@ public class TestIterator {
     assertTrue(i.hasNext());
     assertEquals(33, i.next().intValue());
     // TODO fix the expected values in the assertions below
-    // Done
     assertTrue(i.hasNext());
     assertEquals(77, i.next().intValue());
     assertTrue(i.hasNext());
@@ -65,6 +64,7 @@ public class TestIterator {
     assertTrue(i.hasNext());
     assertEquals(66, i.next().intValue());
     assertFalse(i.hasNext());
+    // Done
   }
 
   @Test
@@ -88,6 +88,7 @@ public class TestIterator {
     // See TestList.java for examples of how to use Arrays.asList; also see the Java Arrays
     // class for more information
     assertEquals(Arrays.asList(33, 44, 55, 66), list);
+    //Done
   }
 
   @Test
@@ -104,13 +105,12 @@ public class TestIterator {
     // TODO use an iterator and a while loop to compute the average (mean) of the values
     // (defined as the sum of the items divided by the number of items)
     // testNonempty shows how to use an iterator; use i.hasNext() in the while loop condition
-    // Done
     final Iterator<Integer> i = list.iterator();
     while (i.hasNext()) {
       sum += i.next();
       n++;
     }
-
+    // Done
     assertEquals(61.3, sum / n, 0.1);
     assertEquals(7, n);
   }
